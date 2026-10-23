@@ -1,0 +1,129 @@
+/* ==========================================================
+   Origens Automáticas (T20): visual do kit Tormenta20
+   Segue o módulo T20 Sidebar: mesma paleta, fontes, papel e botões.
+   - Usa as variáveis --t20-* do T20 Sidebar quando ele está ativo
+     (inclusive o tema claro/escuro por jogador) e tem valores
+     próprios quando não está.
+   - Fontes e imagens são lidas da pasta do módulo t20-sidebar;
+     sem ele, caem em fontes e cores reserva.
+   Paleta: #000000 #3f0f12 #6f3c27 #b02b2e #f0dc82 #e8d1b5 #ddd9d1 #f6f6f6
+   ========================================================== */
+@font-face {
+  font-family: "T20 Tormenta";
+  src: url("../../t20-sidebar/fonts/Tormenta20.ttf") format("truetype");
+  unicode-range: U+0000, U+000D, U+0020-0021, U+0026, U+0028-002A, U+002C-003A, U+003F, U+0041-0058, U+005A, U+0061-007A, U+00B4, U+00B8, U+00BA, U+00C0-00C2, U+00C9, U+00CD, U+00E1-00E3, U+00E7, U+00E9-00EA, U+00ED, U+00F3-00F5, U+00FA, U+02C6, U+02DC, U+2019, U+201C;
+}
+@font-face { font-family: "T20 Fallback"; src: url("../../t20-sidebar/fonts/IowanOldStyle-Caps.otf") format("opentype"); }
+@font-face { font-family: "T20 Iowan"; src: url("../../t20-sidebar/fonts/IowanOldStyle-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "T20 Iowan"; src: url("../../t20-sidebar/fonts/IowanOldStyle-Bold.otf") format("opentype"); font-weight: 700; }
+@font-face { font-family: "T20 Sans"; src: url("../../t20-sidebar/fonts/SourceSansPro-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "T20 Sans"; src: url("../../t20-sidebar/fonts/SourceSansPro-Bold.ttf") format("truetype"); font-weight: 700; }
+
+.origens-t20-dlg {
+  --c-vinho: var(--t20-vinho, #3f0f12);
+  --c-marrom: var(--t20-marrom, #6f3c27);
+  --c-vermelho: var(--t20-vermelho, #b02b2e);
+  --c-ouro: var(--t20-ouro, #f0dc82);
+  --c-bg: var(--t20-bg, #f6f6f6);
+  --c-text: var(--t20-text, #000000);
+  --c-muted: var(--t20-muted, #727175);
+  --c-name: var(--t20-name, #6f3c27);
+  --c-line: var(--t20-line, rgba(111, 60, 39, 0.35));
+  --c-input-bg: var(--t20-input-bg, #ffffff);
+  --c-input-text: var(--t20-input-text, #000000);
+  --c-input-border: var(--t20-input-border, #6f3c27);
+
+  background: var(--c-bg) url("../../t20-sidebar/images/papel.jpg") center top / cover repeat;
+  background-blend-mode: multiply;
+  color: var(--c-text);
+  font-family: "T20 Sans", "Source Sans Pro", sans-serif;
+  border: 1px solid var(--c-vinho);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
+
+  /* ---- barra de título: faixa vermelha com letras douradas ---- */
+  & .window-header {
+    background: var(--c-vermelho) url("../../t20-sidebar/images/faixa-pasta.png") center / 100% 100% no-repeat;
+    border-bottom: 1px solid var(--c-vinho);
+    color: var(--c-ouro);
+  }
+  & .window-title {
+    color: var(--c-ouro);
+    font-family: "T20 Tormenta", "T20 Fallback", serif;
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    text-shadow: 0 1px 2px rgba(63, 15, 18, 0.9);
+  }
+  & .window-header button, & .window-header i { color: var(--c-ouro); text-shadow: 0 1px 1px rgba(63, 15, 18, 0.9); }
+
+  & .window-content { background: transparent; color: var(--c-text); }
+  & .dialog-content, & .origens-t20 { color: var(--c-text); font-family: "T20 Iowan", "Iowan Old Style", Georgia, serif; font-size: 14px; }
+  & .origens-t20 { scrollbar-color: var(--c-vermelho) var(--t20-scroll-track, #ddd9d1); scrollbar-width: thin; }
+  & p, & li, & label, & td { color: var(--c-text); }
+  & strong { color: var(--c-name); }
+  & .hint, & .muted { color: var(--c-muted); }
+  & .count { color: var(--c-vermelho); font-family: "T20 Sans", sans-serif; }
+
+  /* ---- grupos ---- */
+  & fieldset {
+    border: 1px solid var(--c-line);
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  & legend {
+    color: var(--c-vermelho);
+    font-family: "T20 Tormenta", "T20 Fallback", serif;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    padding: 0 6px;
+  }
+  & h3 { color: var(--c-vermelho); font-family: "T20 Tormenta", "T20 Fallback", serif; border-bottom: 1px solid var(--c-marrom); }
+  & hr { border-color: var(--c-line); }
+
+  /* ---- campos ---- */
+  & input[type="text"], & input[type="number"], & input[type="search"], & select, & textarea {
+    background: var(--c-input-bg);
+    color: var(--c-input-text);
+    border: 1px solid var(--c-input-border);
+    border-radius: 2px;
+    font-family: "T20 Sans", sans-serif;
+  }
+  & select option, & select optgroup { background: var(--c-input-bg); color: var(--c-input-text); }
+  & select optgroup { font-family: "T20 Iowan", serif; font-weight: 700; color: var(--c-vermelho); }
+  & select option:disabled { color: var(--c-muted); }
+  & input[type="checkbox"], & input[type="radio"] { accent-color: var(--c-vermelho); }
+  & input::placeholder { color: var(--c-muted); }
+
+  /* ---- botões: vinho com o selo do livro, letras douradas ---- */
+  & button, & .form-footer button, & .dialog-buttons button {
+    background: var(--c-vinho) url("../../t20-sidebar/images/botao.png") center / 100% 100% no-repeat;
+    color: var(--c-ouro);
+    font-family: "T20 Tormenta", "T20 Fallback", serif;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--c-vinho);
+    border-radius: 2px;
+    box-shadow: none;
+    transition: filter 0.15s;
+  }
+  & button i { color: var(--c-ouro); }
+  & button:hover:not(:disabled) { filter: brightness(1.25) saturate(1.1); color: #ffffff; }
+  & button:disabled { filter: grayscale(0.7) brightness(0.7); cursor: not-allowed; }
+  & button.mini { font-family: "T20 Sans", sans-serif; font-weight: 700; }
+  & .window-header button { background: transparent; border: 0; }
+
+  & table td.num { color: var(--c-vermelho); font-family: "T20 Tormenta", "T20 Fallback", serif; font-size: 18px; }
+  & ul { color: var(--c-text); }
+}
+
+.origens-t20-btn { font-family: "T20 Tormenta", "T20 Fallback", serif; }
+
+/* linhas e campos específicos do módulo */
+.origens-t20-dlg .origens-t20 label.row { display: flex; align-items: center; gap: 0.4rem; margin: 0.2rem 0; }
+.origens-t20-dlg .origens-t20 label.row select { flex: 1; min-width: 0; }
+.origens-t20-dlg .origens-t20 .row-block { display: flex; flex-direction: column; gap: 0.25rem; margin: 0.35rem 0; }
+.origens-t20-dlg .origens-t20 .row-block select, .origens-t20-dlg .origens-t20 .row-block input.filter { width: 100%; }
+.origens-t20-dlg .origens-t20 .tag { font-size: 0.8em; color: var(--c-muted); }
+.origens-t20-dlg .origens-t20 .count { float: right; font-weight: bold; }
+.origens-t20-dlg .origens-t20 .muted { opacity: 0.6; }

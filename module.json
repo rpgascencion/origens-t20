@@ -1,0 +1,65 @@
+{
+  "id": "origens-t20",
+  "title": "Origens Automáticas (T20)",
+  "description": "Compêndio de origens do Tormenta20 (Livro Básico, Heróis de Arton e Atlas de Arton). Ao arrastar uma origem para a ficha, abre uma caixa para escolher os 2 benefícios (perícias treinadas ou poderes adicionados) ou, nas origens de benefício único, adiciona o poder automaticamente. Origens com escolha extra (atributo, poder, magia, perícia, habilidade de outra classe) abrem uma caixa de seleção. Visual do kit Tormenta20.",
+  "version": "0.2.3",
+  "authors": [
+    {
+      "name": "Você + Claude"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "tormenta20",
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.5.0"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "suplementos-de-arton",
+        "type": "module",
+        "reason": "As origens de Heróis de Arton e do Atlas de Arton usam os poderes deste módulo."
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "packs": [
+    {
+      "name": "origens",
+      "label": "Origens",
+      "system": "tormenta20",
+      "path": "packs/origens",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Origens",
+      "sorting": "m",
+      "color": "#5a4a2a",
+      "packs": [
+        "origens"
+      ]
+    }
+  ],
+  "styles": [
+    "styles/origens.css"
+  ],
+  "url": "https://github.com/rpgascencion/origens-t20",
+  "manifest": "https://raw.githubusercontent.com/rpgascencion/origens-t20/main/module.json",
+  "download": "https://github.com/rpgascencion/origens-t20/releases/latest/download/origens-t20.zip"
+}
