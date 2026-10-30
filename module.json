@@ -2,7 +2,7 @@
   "id": "origens-t20",
   "title": "Origens Automáticas (T20)",
   "description": "Compêndio de origens do Tormenta20 (Livro Básico, Heróis de Arton e Atlas de Arton). Ao arrastar uma origem para a ficha, abre uma caixa para escolher os 2 benefícios (perícias treinadas ou poderes adicionados) ou, nas origens de benefício único, adiciona o poder automaticamente. Origens com escolha extra (atributo, poder, magia, perícia, habilidade de outra classe) abrem uma caixa de seleção. Visual do kit Tormenta20.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "authors": [
     {
       "name": "Você + Claude"
@@ -10,7 +10,8 @@
   ],
   "compatibility": {
     "minimum": "13",
-    "verified": "13"
+    "verified": "13",
+    "maximum": "14"
   },
   "relationships": {
     "systems": [
