@@ -7,6 +7,7 @@ Na barra lateral, na pasta **Origens**, fica o compêndio **Origens** com uma pa
 - **Livro Básico** (35 origens, p. 85-95)
 - **Heróis de Arton** (30 origens especiais, p. 46-53)
 - **Atlas de Arton** (66 origens regionais, p. 470-479)
+- **Dragão Brasil** (4 origens regionais de Ubani da DB #233, p. 20-21: *Ajudante Nato*, *Bori Enredado*, *Celebrante da Vida* e *Verdugo da Morte*)
 
 ## Como funciona
 - **Livro Básico:** ao arrastar a origem para a ficha, abre uma caixa para escolher exatamente 2 benefícios. Perícia escolhida fica treinada; poder escolhido é adicionado à ficha. Origens com "um poder de combate/da Tormenta à sua escolha" abrem uma lista; "Ofício" abre a lista de ofícios. Amnésico abre a caixa para o mestre escolher a perícia e o poder, e adiciona Lembranças Graduais sozinho.
@@ -29,3 +30,11 @@ Na barra lateral, na pasta **Origens**, fica o compêndio **Origens** com uma pa
 ## v0.2.3
 - O campo **Subtipo** de cada origem agora é o **nome da própria origem** (antes era o livro ou a região), igual aos poderes de origem do sistema. Assim o Assistente de Criação do T20 Hayd GMTools lista cada origem pelo nome e mostra a origem certa em "Poderes de <origem>", em vez de "Livro Básico", "Heróis de Arton" etc.
 - No GMTools, ligue o compêndio *Origens* em *Fontes do Assistente de Criação*. Ao concluir a criação, as origens arrastadas abrem a caixa de escolha do módulo normalmente.
+
+## v0.2.5
+- Adicionada a pasta **Dragão Brasil** com as 4 novas origens regionais de Ubani da **Dragão Brasil #233 (p. 20–21)**, com seus poderes embutidos e automatizados neste mesmo compêndio:
+  - **Ajudante Nato**: abre caixa para escolher 1 perícia para treinar automaticamente + poder com efeito de uso `+10` em testes de perícia para ajudar.
+  - **Bori Enredado**: poder com `+3 PM` (`pm.bonus.total`), `+2` em Misticismo e efeito automático `+1 CD` em magias.
+  - **Celebrante da Vida**: poder que treina Diplomacia e Religião automaticamente + efeito de uso `+5` em Diplomacia (traje da corte / ubaneris).
+  - **Verdugo da Morte**: poder que treina Religião, adiciona proficiência com Cimitarra e Espada Longa e inclui efeito de uso (`1 PM`, `+1d` de dano extra em arma de corte contra sangrando ou morto-vivo).
+
