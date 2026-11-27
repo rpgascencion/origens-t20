@@ -40,6 +40,31 @@ const skillLabel = (id) => {
 const isTrained = (actor, id) => !!actor.system?.pericias?.[id]?.treinado;
 const ownsPower = (actor, name) => actor.items.some((i) => i.type === "poder" && i.name === name);
 
+function compatV14Effects(itemData) {
+	if ((game.release?.generation ?? 13) < 14 || !Array.isArray(itemData?.effects)) return itemData;
+	const tiposKeys = ["self", "ability", "attack", "consumable", "equipment", "power", "skill", "spell"];
+	for (const e of itemData.effects) {
+		const fl = e?.flags?.tormenta20;
+		if (!fl?.onuse) continue;
+		const wasAuto = !e.disabled;
+		const nomes = String(fl.items ?? "").replaceAll(",", ";").split(";").map((i) => i.trim()).filter(Boolean);
+		e.disabled = true;
+		e.system = {
+			...(e.system ?? {}),
+			onuse: true,
+			abilityUse: {
+				automatic: wasAuto,
+				aumenta: !!fl.aumenta,
+				custo: Number.isNumeric(fl.custo) && fl.custo !== "" ? Number(fl.custo) : null,
+				names: nomes,
+				types: tiposKeys.filter((k) => fl[k])
+			}
+		};
+		e.flags = { ...e.flags, tormenta20: {} };
+	}
+	return itemData;
+}
+
 async function addPowers(actor, uuids) {
 	const created = [];
 	const missing = [];
@@ -49,7 +74,7 @@ async function addPowers(actor, uuids) {
 		const src = await foundry.utils.fromUuid(uuid);
 		if (!src) { missing.push(uuid); continue; }
 		if (actor.items.some((i) => i.name === src.name && i.type === src.type)) { skipped.push(src.name); continue; }
-		datas.push(game.items.fromCompendium(src));
+		datas.push(compatV14Effects(game.items.fromCompendium(src)));
 		created.push(src.name);
 	}
 	if (datas.length) await actor.createEmbeddedDocuments("Item", datas);
@@ -139,7 +164,8 @@ const FOLLOWUPS = {
 		return Object.entries(CLASS_ABIL).filter(([n]) => !own.includes(norm(n))).flatMap(([n, l]) => l.map((x) => ({ ...x, group: n })));
 	} }],
 	[norm("Citadino Abastado")]: [{ id: "oficio", type: "skill", label: "Ofício em que é treinado", skills: () => craftSkills() }],
-	[norm("Espião")]: [{ id: "pericia", type: "skill", label: "Perícia que usa Carisma como atributo-chave", skills: () => Object.keys(CONFIG.T20?.pericias ?? {}).filter((id) => !["luta", "pont"].includes(id)) }]
+	[norm("Espião")]: [{ id: "pericia", type: "skill", label: "Perícia que usa Carisma como atributo-chave", skills: () => Object.keys(CONFIG.T20?.pericias ?? {}).filter((id) => !["luta", "pont"].includes(id)) }],
+	[norm("Ajudante Nato")]: [{ id: "treino", type: "skill", label: "Perícia em que se torna treinado", skills: () => Object.keys(CONFIG.T20?.pericias ?? {}) }]
 };
 
 /** Linha de uma etapa extra. */
@@ -151,8 +177,9 @@ function followRow(actor, step) {
 		return `<label class="row"><span>${esc(step.label)}</span><select name="${step.id}">${step.options.map(([k, n]) => `<option value="${k}">${n}</option>`).join("")}</select></label>`;
 	}
 	if (step.type === "skill") {
+		const lockTrained = step.id === "oficio" || step.id === "treino";
 		const opts = step.skills(actor).map((id) => ({ id, label: skillLabel(id) })).sort((a, b) => a.label.localeCompare(b.label, "pt"));
-		return `<label class="row"><span>${esc(step.label)}</span><select name="${step.id}">${opts.map((s) => `<option value="${s.id}"${isTrained(actor, s.id) && step.id === "oficio" ? " disabled" : ""}>${esc(s.label)}${isTrained(actor, s.id) && step.id === "oficio" ? " (treinado)" : ""}</option>`).join("")}</select></label>`;
+		return `<label class="row"><span>${esc(step.label)}</span><select name="${step.id}">${opts.map((s) => `<option value="${s.id}"${isTrained(actor, s.id) && lockTrained ? " disabled" : ""}>${esc(s.label)}${isTrained(actor, s.id) && lockTrained ? " (treinado)" : ""}</option>`).join("")}</select></label>`;
 	}
 	const list = step.list(actor);
 	if (!list.length) return `<p class="hint">${esc(step.label)}: nenhuma opção disponível agora (adicione a classe primeiro, ou escolha depois pela ficha).</p>`;
@@ -218,6 +245,10 @@ async function applyFollow(actor, o, v) {
 	if (v.oficio) {
 		await actor.update({ [`system.pericias.${v.oficio}.treinado`]: true });
 		notes.push(`Treinado em ${skillLabel(v.oficio)}.`);
+	}
+	if (v.treino) {
+		await actor.update({ [`system.pericias.${v.treino}.treinado`]: true });
+		notes.push(`Treinado em ${skillLabel(v.treino)}.`);
 	}
 	if (v.pericia) {
 		await actor.update({ [`system.pericias.${v.pericia}.atributo`]: "car" });

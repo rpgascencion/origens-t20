@@ -87,6 +87,28 @@
     "exportSource": null,
     "compendiumSource": null
    }
+  },
+  {
+   "_id": "F87MF5chW55XVaXi",
+   "name": "Dragão Brasil",
+   "type": "Item",
+   "folder": null,
+   "sorting": "a",
+   "sort": 400000,
+   "color": null,
+   "flags": {},
+   "description": "",
+   "_stats": {
+    "systemId": "tormenta20",
+    "systemVersion": "1.5.015",
+    "coreVersion": "13.344",
+    "createdTime": 1795736000000,
+    "modifiedTime": 1795736000000,
+    "lastModifiedBy": "t20builder000000",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+   }
   }
  ],
  "items": [
@@ -12564,6 +12586,1133 @@
     "coreVersion": "13.344",
     "createdTime": 1792023416695,
     "modifiedTime": 1792023416695,
+    "lastModifiedBy": "t20builder000000",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+   }
+  },
+  {
+   "_id": "JARlopGjWgfOlJ8s",
+   "name": "Ajudante Nato",
+   "type": "poder",
+   "img": "systems/tormenta20/icons/poderes/origem.webp",
+   "effects": [
+    {
+     "_id": "q3ETVoJaDJg2tIDx",
+     "name": "Ajudante Nato (+10 em testes de perícia para ajudar)",
+     "img": "systems/tormenta20/icons/poderes/origem.webp",
+     "type": "base",
+     "system": {},
+     "origin": "Compendium.origens-t20.origens.Item.JARlopGjWgfOlJ8s",
+     "tint": "#ffffff",
+     "flags": {
+      "tormenta20": {
+       "onuse": true,
+       "durationScene": false,
+       "self": false,
+       "attack": false,
+       "skill": true,
+       "ability": false,
+       "power": false,
+       "equipment": false,
+       "spell": false,
+       "consumable": false,
+       "items": "",
+       "aumenta": false,
+       "custo": ""
+      }
+     },
+     "duration": {
+      "startTime": null,
+      "combat": null,
+      "seconds": null,
+      "rounds": null,
+      "turns": null,
+      "startRound": null,
+      "startTurn": null
+     },
+     "disabled": true,
+     "changes": [
+      {
+       "key": "roll",
+       "mode": 2,
+       "value": "10",
+       "priority": null
+      }
+     ],
+     "description": "",
+     "transfer": true,
+     "statuses": [],
+     "sort": 0,
+     "_stats": {
+      "coreVersion": "13.344",
+      "systemId": null,
+      "systemVersion": null,
+      "createdTime": null,
+      "modifiedTime": null,
+      "lastModifiedBy": null,
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "exportSource": null
+     }
+    }
+   ],
+   "folder": "HBtV1cktdhWEEMTL",
+   "sort": 100,
+   "flags": {},
+   "ownership": {
+    "default": 0
+   },
+   "system": {
+    "description": {
+     "value": "<p>Você abraçou perfeitamente os ideais comunitários de Ubani. Você recebe +10 em testes de perícia para ajudar, e pode fazer testes para ajudar mesmo quando não é treinado na perícia. Além disso, você se torna treinado em uma perícia à sua escolha e recebe um alikunhá (ver <em>Atlas de Arton</em>, p. 471).</p>",
+     "chat": "",
+     "unidentified": ""
+    },
+    "source": "Dragão Brasil #233, p. 20",
+    "ativacao": {
+     "execucao": "passive",
+     "custo": 0,
+     "qtd": "",
+     "condicao": "",
+     "special": ""
+    },
+    "duracao": {
+     "value": 0,
+     "units": "",
+     "special": ""
+    },
+    "target": {
+     "value": null,
+     "width": null,
+     "units": "",
+     "type": ""
+    },
+    "range": {
+     "value": null,
+     "units": ""
+    },
+    "consume": {
+     "type": "",
+     "target": "",
+     "amount": null,
+     "mpMultiplier": false
+    },
+    "efeito": "",
+    "alcance": "none",
+    "alvo": "",
+    "area": "",
+    "resistencia": {
+     "pericia": "",
+     "atributo": "",
+     "bonus": 0,
+     "txt": ""
+    },
+    "rolls": [],
+    "tipo": "origem",
+    "subtipo": "Ajudante Nato",
+    "chatFlavor": "",
+    "origin": "",
+    "tags": [
+     "Ubani"
+    ],
+    "rolltags": [],
+    "automationtags": [],
+    "chatGif": ""
+   },
+   "_stats": {
+    "systemId": "tormenta20",
+    "systemVersion": "1.5.015",
+    "coreVersion": "13.344",
+    "createdTime": 1795736000000,
+    "modifiedTime": 1795736000000,
+    "lastModifiedBy": "t20builder000000",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+   }
+  },
+  {
+   "_id": "aqVdo6lLvN539ZJJ",
+   "name": "Ajudante Nato",
+   "type": "poder",
+   "img": "systems/tormenta20/icons/poderes/origem.webp",
+   "effects": [],
+   "folder": "F87MF5chW55XVaXi",
+   "sort": 100000,
+   "flags": {
+    "origens-t20": {
+     "origin": {
+      "kind": "single",
+      "name": "Ajudante Nato",
+      "power": {
+       "name": "Ajudante Nato",
+       "uuid": "Compendium.origens-t20.origens.Item.JARlopGjWgfOlJ8s"
+      }
+     }
+    }
+   },
+   "ownership": {
+    "default": 0
+   },
+   "system": {
+    "description": {
+     "value": "<p><strong>Região:</strong> Ubani</p><p><strong>Itens.</strong> Essência de mana x2, pergaminho com magia de 1º círculo, lança.</p><p><strong>Poder da origem:</strong> @UUID[Compendium.origens-t20.origens.Item.JARlopGjWgfOlJ8s]{Ajudante Nato}</p><hr><p><em>Ao arrastar esta origem para uma ficha, o poder dela é adicionado automaticamente (com os efeitos já configurados). Este poder está neste mesmo compêndio.</em></p>",
+     "chat": "",
+     "unidentified": ""
+    },
+    "source": "Dragão Brasil #233, p. 20",
+    "ativacao": {
+     "execucao": "passive",
+     "custo": 0,
+     "qtd": "",
+     "condicao": "",
+     "special": ""
+    },
+    "duracao": {
+     "value": 0,
+     "units": "",
+     "special": ""
+    },
+    "target": {
+     "value": null,
+     "width": null,
+     "units": "",
+     "type": ""
+    },
+    "range": {
+     "value": null,
+     "units": ""
+    },
+    "consume": {
+     "type": "",
+     "target": "",
+     "amount": null,
+     "mpMultiplier": false
+    },
+    "efeito": "",
+    "alcance": "none",
+    "alvo": "",
+    "area": "",
+    "resistencia": {
+     "pericia": "",
+     "atributo": "",
+     "bonus": 0,
+     "txt": ""
+    },
+    "rolls": [],
+    "tipo": "origem",
+    "subtipo": "Ajudante Nato",
+    "chatFlavor": "",
+    "origin": "",
+    "tags": [
+     "Ubani"
+    ],
+    "rolltags": [],
+    "automationtags": [],
+    "chatGif": ""
+   },
+   "_stats": {
+    "systemId": "tormenta20",
+    "systemVersion": "1.5.015",
+    "coreVersion": "13.344",
+    "createdTime": 1795736000000,
+    "modifiedTime": 1795736000000,
+    "lastModifiedBy": "t20builder000000",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+   }
+  },
+  {
+   "_id": "ftxdJ20c7H3acCWa",
+   "name": "Bori Enredado",
+   "type": "poder",
+   "img": "systems/tormenta20/icons/poderes/origem.webp",
+   "effects": [
+    {
+     "_id": "e1iyxeT5MaBNNjNv",
+     "name": "Bori Enredado (+3 PM e +2 Misticismo)",
+     "img": "systems/tormenta20/icons/poderes/origem.webp",
+     "type": "base",
+     "system": {},
+     "origin": "Compendium.origens-t20.origens.Item.ftxdJ20c7H3acCWa",
+     "tint": "#ffffff",
+     "flags": {
+      "tormenta20": {
+       "onuse": false,
+       "durationScene": false,
+       "self": false,
+       "attack": false,
+       "skill": false,
+       "ability": false,
+       "power": false,
+       "equipment": false,
+       "spell": false,
+       "consumable": false,
+       "items": "",
+       "aumenta": false,
+       "custo": ""
+      }
+     },
+     "duration": {
+      "startTime": null,
+      "combat": null,
+      "seconds": null,
+      "rounds": null,
+      "turns": null,
+      "startRound": null,
+      "startTurn": null
+     },
+     "disabled": false,
+     "changes": [
+      {
+       "key": "system.attributes.pm.bonus.total",
+       "mode": 2,
+       "value": "3",
+       "priority": null
+      },
+      {
+       "key": "system.pericias.mist.bonus",
+       "mode": 2,
+       "value": "2",
+       "priority": null
+      }
+     ],
+     "description": "",
+     "transfer": true,
+     "statuses": [],
+     "sort": 0,
+     "_stats": {
+      "coreVersion": "13.344",
+      "systemId": null,
+      "systemVersion": null,
+      "createdTime": null,
+      "modifiedTime": null,
+      "lastModifiedBy": null,
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "exportSource": null
+     }
+    },
+    {
+     "_id": "Gh1XKuGY48aUHZxs",
+     "name": "Bori Enredado (+1 CD em magias)",
+     "img": "systems/tormenta20/icons/poderes/origem.webp",
+     "type": "base",
+     "system": {},
+     "origin": "Compendium.origens-t20.origens.Item.ftxdJ20c7H3acCWa",
+     "tint": "#ffffff",
+     "flags": {
+      "tormenta20": {
+       "onuse": true,
+       "durationScene": false,
+       "self": false,
+       "attack": false,
+       "skill": false,
+       "ability": false,
+       "power": false,
+       "equipment": false,
+       "spell": true,
+       "consumable": false,
+       "items": "",
+       "aumenta": false,
+       "custo": ""
+      }
+     },
+     "duration": {
+      "startTime": null,
+      "combat": null,
+      "seconds": null,
+      "rounds": null,
+      "turns": null,
+      "startRound": null,
+      "startTurn": null
+     },
+     "disabled": false,
+     "changes": [
+      {
+       "key": "cd",
+       "mode": 2,
+       "value": "1",
+       "priority": null
+      }
+     ],
+     "description": "",
+     "transfer": true,
+     "statuses": [],
+     "sort": 10,
+     "_stats": {
+      "coreVersion": "13.344",
+      "systemId": null,
+      "systemVersion": null,
+      "createdTime": null,
+      "modifiedTime": null,
+      "lastModifiedBy": null,
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "exportSource": null
+     }
+    }
+   ],
+   "folder": "HBtV1cktdhWEEMTL",
+   "sort": 200,
+   "flags": {},
+   "ownership": {
+    "default": 0
+   },
+   "system": {
+    "description": {
+     "value": "<p>Você nasceu com grande potencial arcano, mas sob um mau agouro. Você recebe +3 pontos de mana e +2 em Misticismo e a CD para resistir a suas magias aumenta em +1. Porém, quando faz um teste e o resultado do d20 é 2 ou 3, você falha automaticamente (como se tivesse tirado 1 natural).</p>",
+     "chat": "",
+     "unidentified": ""
+    },
+    "source": "Dragão Brasil #233, p. 20",
+    "ativacao": {
+     "execucao": "passive",
+     "custo": 0,
+     "qtd": "",
+     "condicao": "",
+     "special": ""
+    },
+    "duracao": {
+     "value": 0,
+     "units": "",
+     "special": ""
+    },
+    "target": {
+     "value": null,
+     "width": null,
+     "units": "",
+     "type": ""
+    },
+    "range": {
+     "value": null,
+     "units": ""
+    },
+    "consume": {
+     "type": "",
+     "target": "",
+     "amount": null,
+     "mpMultiplier": false
+    },
+    "efeito": "",
+    "alcance": "none",
+    "alvo": "",
+    "area": "",
+    "resistencia": {
+     "pericia": "",
+     "atributo": "",
+     "bonus": 0,
+     "txt": ""
+    },
+    "rolls": [],
+    "tipo": "origem",
+    "subtipo": "Bori Enredado",
+    "chatFlavor": "",
+    "origin": "",
+    "tags": [
+     "Ubani"
+    ],
+    "rolltags": [],
+    "automationtags": [],
+    "chatGif": ""
+   },
+   "_stats": {
+    "systemId": "tormenta20",
+    "systemVersion": "1.5.015",
+    "coreVersion": "13.344",
+    "createdTime": 1795736000000,
+    "modifiedTime": 1795736000000,
+    "lastModifiedBy": "t20builder000000",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+   }
+  },
+  {
+   "_id": "3LXexEvOjUBr8iJf",
+   "name": "Bori Enredado",
+   "type": "poder",
+   "img": "systems/tormenta20/icons/poderes/origem.webp",
+   "effects": [],
+   "folder": "F87MF5chW55XVaXi",
+   "sort": 200000,
+   "flags": {
+    "origens-t20": {
+     "origin": {
+      "kind": "single",
+      "name": "Bori Enredado",
+      "power": {
+       "name": "Bori Enredado",
+       "uuid": "Compendium.origens-t20.origens.Item.ftxdJ20c7H3acCWa"
+      }
+     }
+    }
+   },
+   "ownership": {
+    "default": 0
+   },
+   "system": {
+    "description": {
+     "value": "<p><strong>Região:</strong> Ubani</p><p><strong>Itens.</strong> Essência de mana, um esotérico à sua escolha (até T$ 500) ou uma zipana.</p><p><strong>Poder da origem:</strong> @UUID[Compendium.origens-t20.origens.Item.ftxdJ20c7H3acCWa]{Bori Enredado}</p><hr><p><em>Ao arrastar esta origem para uma ficha, o poder dela é adicionado automaticamente (com os efeitos já configurados). Este poder está neste mesmo compêndio.</em></p>",
+     "chat": "",
+     "unidentified": ""
+    },
+    "source": "Dragão Brasil #233, p. 20",
+    "ativacao": {
+     "execucao": "passive",
+     "custo": 0,
+     "qtd": "",
+     "condicao": "",
+     "special": ""
+    },
+    "duracao": {
+     "value": 0,
+     "units": "",
+     "special": ""
+    },
+    "target": {
+     "value": null,
+     "width": null,
+     "units": "",
+     "type": ""
+    },
+    "range": {
+     "value": null,
+     "units": ""
+    },
+    "consume": {
+     "type": "",
+     "target": "",
+     "amount": null,
+     "mpMultiplier": false
+    },
+    "efeito": "",
+    "alcance": "none",
+    "alvo": "",
+    "area": "",
+    "resistencia": {
+     "pericia": "",
+     "atributo": "",
+     "bonus": 0,
+     "txt": ""
+    },
+    "rolls": [],
+    "tipo": "origem",
+    "subtipo": "Bori Enredado",
+    "chatFlavor": "",
+    "origin": "",
+    "tags": [
+     "Ubani"
+    ],
+    "rolltags": [],
+    "automationtags": [],
+    "chatGif": ""
+   },
+   "_stats": {
+    "systemId": "tormenta20",
+    "systemVersion": "1.5.015",
+    "coreVersion": "13.344",
+    "createdTime": 1795736000000,
+    "modifiedTime": 1795736000000,
+    "lastModifiedBy": "t20builder000000",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+   }
+  },
+  {
+   "_id": "JyidPRYQGMypjvbQ",
+   "name": "Celebrante da Vida",
+   "type": "poder",
+   "img": "systems/tormenta20/icons/poderes/origem.webp",
+   "effects": [
+    {
+     "_id": "R8YHtpN1ngGZi6pO",
+     "name": "Celebrante da Vida — Perícias Treinadas",
+     "img": "systems/tormenta20/icons/poderes/origem.webp",
+     "type": "base",
+     "system": {},
+     "origin": "Compendium.origens-t20.origens.Item.JyidPRYQGMypjvbQ",
+     "tint": "#ffffff",
+     "flags": {
+      "tormenta20": {
+       "onuse": false,
+       "durationScene": false,
+       "self": false,
+       "attack": false,
+       "skill": false,
+       "ability": false,
+       "power": false,
+       "equipment": false,
+       "spell": false,
+       "consumable": false,
+       "items": "",
+       "aumenta": false,
+       "custo": ""
+      }
+     },
+     "duration": {
+      "startTime": null,
+      "combat": null,
+      "seconds": null,
+      "rounds": null,
+      "turns": null,
+      "startRound": null,
+      "startTurn": null
+     },
+     "disabled": false,
+     "changes": [
+      {
+       "key": "system.pericias.dipl.treinado",
+       "mode": 5,
+       "value": "true",
+       "priority": null
+      },
+      {
+       "key": "system.pericias.reli.treinado",
+       "mode": 5,
+       "value": "true",
+       "priority": null
+      }
+     ],
+     "description": "",
+     "transfer": true,
+     "statuses": [],
+     "sort": 0,
+     "_stats": {
+      "coreVersion": "13.344",
+      "systemId": null,
+      "systemVersion": null,
+      "createdTime": null,
+      "modifiedTime": null,
+      "lastModifiedBy": null,
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "exportSource": null
+     }
+    },
+    {
+     "_id": "cpAd1oVehhGQeF1f",
+     "name": "Celebrante da Vida (+5 Diplomacia p/ mudar atitude de ubaneris com traje da corte)",
+     "img": "systems/tormenta20/icons/poderes/origem.webp",
+     "type": "base",
+     "system": {},
+     "origin": "Compendium.origens-t20.origens.Item.JyidPRYQGMypjvbQ",
+     "tint": "#ffffff",
+     "flags": {
+      "tormenta20": {
+       "onuse": true,
+       "durationScene": false,
+       "self": false,
+       "attack": false,
+       "skill": true,
+       "ability": false,
+       "power": false,
+       "equipment": false,
+       "spell": false,
+       "consumable": false,
+       "items": "Diplomacia",
+       "aumenta": false,
+       "custo": ""
+      }
+     },
+     "duration": {
+      "startTime": null,
+      "combat": null,
+      "seconds": null,
+      "rounds": null,
+      "turns": null,
+      "startRound": null,
+      "startTurn": null
+     },
+     "disabled": true,
+     "changes": [
+      {
+       "key": "roll",
+       "mode": 2,
+       "value": "5",
+       "priority": null
+      }
+     ],
+     "description": "",
+     "transfer": true,
+     "statuses": [],
+     "sort": 10,
+     "_stats": {
+      "coreVersion": "13.344",
+      "systemId": null,
+      "systemVersion": null,
+      "createdTime": null,
+      "modifiedTime": null,
+      "lastModifiedBy": null,
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "exportSource": null
+     }
+    }
+   ],
+   "folder": "HBtV1cktdhWEEMTL",
+   "sort": 300,
+   "flags": {},
+   "ownership": {
+    "default": 0
+   },
+   "system": {
+    "description": {
+     "value": "<p>Você se torna treinado em Diplomacia e Religião. Enquanto usa um traje da corte, recebe +5 em testes de Diplomacia para mudar atitude de ubaneris.</p>",
+     "chat": "",
+     "unidentified": ""
+    },
+    "source": "Dragão Brasil #233, p. 20",
+    "ativacao": {
+     "execucao": "passive",
+     "custo": 0,
+     "qtd": "",
+     "condicao": "",
+     "special": ""
+    },
+    "duracao": {
+     "value": 0,
+     "units": "",
+     "special": ""
+    },
+    "target": {
+     "value": null,
+     "width": null,
+     "units": "",
+     "type": ""
+    },
+    "range": {
+     "value": null,
+     "units": ""
+    },
+    "consume": {
+     "type": "",
+     "target": "",
+     "amount": null,
+     "mpMultiplier": false
+    },
+    "efeito": "",
+    "alcance": "none",
+    "alvo": "",
+    "area": "",
+    "resistencia": {
+     "pericia": "",
+     "atributo": "",
+     "bonus": 0,
+     "txt": ""
+    },
+    "rolls": [],
+    "tipo": "origem",
+    "subtipo": "Celebrante da Vida",
+    "chatFlavor": "",
+    "origin": "",
+    "tags": [
+     "Ubani"
+    ],
+    "rolltags": [],
+    "automationtags": [],
+    "chatGif": ""
+   },
+   "_stats": {
+    "systemId": "tormenta20",
+    "systemVersion": "1.5.015",
+    "coreVersion": "13.344",
+    "createdTime": 1795736000000,
+    "modifiedTime": 1795736000000,
+    "lastModifiedBy": "t20builder000000",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+   }
+  },
+  {
+   "_id": "ldMd3eclhmAmBYtJ",
+   "name": "Celebrante da Vida",
+   "type": "poder",
+   "img": "systems/tormenta20/icons/poderes/origem.webp",
+   "effects": [],
+   "folder": "F87MF5chW55XVaXi",
+   "sort": 300000,
+   "flags": {
+    "origens-t20": {
+     "origin": {
+      "kind": "single",
+      "name": "Celebrante da Vida",
+      "power": {
+       "name": "Celebrante da Vida",
+       "uuid": "Compendium.origens-t20.origens.Item.JyidPRYQGMypjvbQ"
+      }
+     }
+    }
+   },
+   "ownership": {
+    "default": 0
+   },
+   "system": {
+    "description": {
+     "value": "<p><strong>Região:</strong> Ubani</p><p><strong>Itens.</strong> Pergaminho de Bênção, poção de Santuário, símbolo sagrado (Allihanna, Kallyadranoch, Megalokk ou Wynna), traje da corte.</p><p><strong>Poder da origem:</strong> @UUID[Compendium.origens-t20.origens.Item.JyidPRYQGMypjvbQ]{Celebrante da Vida}</p><hr><p><em>Ao arrastar esta origem para uma ficha, o poder dela é adicionado automaticamente (com os efeitos já configurados). Este poder está neste mesmo compêndio.</em></p>",
+     "chat": "",
+     "unidentified": ""
+    },
+    "source": "Dragão Brasil #233, p. 20",
+    "ativacao": {
+     "execucao": "passive",
+     "custo": 0,
+     "qtd": "",
+     "condicao": "",
+     "special": ""
+    },
+    "duracao": {
+     "value": 0,
+     "units": "",
+     "special": ""
+    },
+    "target": {
+     "value": null,
+     "width": null,
+     "units": "",
+     "type": ""
+    },
+    "range": {
+     "value": null,
+     "units": ""
+    },
+    "consume": {
+     "type": "",
+     "target": "",
+     "amount": null,
+     "mpMultiplier": false
+    },
+    "efeito": "",
+    "alcance": "none",
+    "alvo": "",
+    "area": "",
+    "resistencia": {
+     "pericia": "",
+     "atributo": "",
+     "bonus": 0,
+     "txt": ""
+    },
+    "rolls": [],
+    "tipo": "origem",
+    "subtipo": "Celebrante da Vida",
+    "chatFlavor": "",
+    "origin": "",
+    "tags": [
+     "Ubani"
+    ],
+    "rolltags": [],
+    "automationtags": [],
+    "chatGif": ""
+   },
+   "_stats": {
+    "systemId": "tormenta20",
+    "systemVersion": "1.5.015",
+    "coreVersion": "13.344",
+    "createdTime": 1795736000000,
+    "modifiedTime": 1795736000000,
+    "lastModifiedBy": "t20builder000000",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+   }
+  },
+  {
+   "_id": "jHHORJlFiZpnGPMO",
+   "name": "Verdugo da Morte",
+   "type": "poder",
+   "img": "systems/tormenta20/icons/poderes/origem.webp",
+   "effects": [
+    {
+     "_id": "hsmUce8oP98a6s0m",
+     "name": "Verdugo da Morte — Religião e Proficiências",
+     "img": "systems/tormenta20/icons/poderes/origem.webp",
+     "type": "base",
+     "system": {},
+     "origin": "Compendium.origens-t20.origens.Item.jHHORJlFiZpnGPMO",
+     "tint": "#ffffff",
+     "flags": {
+      "tormenta20": {
+       "onuse": false,
+       "durationScene": false,
+       "self": false,
+       "attack": false,
+       "skill": false,
+       "ability": false,
+       "power": false,
+       "equipment": false,
+       "spell": false,
+       "consumable": false,
+       "items": "",
+       "aumenta": false,
+       "custo": ""
+      }
+     },
+     "duration": {
+      "startTime": null,
+      "combat": null,
+      "seconds": null,
+      "rounds": null,
+      "turns": null,
+      "startRound": null,
+      "startTurn": null
+     },
+     "disabled": false,
+     "changes": [
+      {
+       "key": "system.pericias.reli.treinado",
+       "mode": 5,
+       "value": "true",
+       "priority": null
+      },
+      {
+       "key": "system.tracos.profArmas.custom",
+       "mode": 2,
+       "value": "Cimitarra; Espada Longa",
+       "priority": null
+      }
+     ],
+     "description": "",
+     "transfer": true,
+     "statuses": [],
+     "sort": 0,
+     "_stats": {
+      "coreVersion": "13.344",
+      "systemId": null,
+      "systemVersion": null,
+      "createdTime": null,
+      "modifiedTime": null,
+      "lastModifiedBy": null,
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "exportSource": null
+     }
+    },
+    {
+     "_id": "KF5D8dJQIlxjc81d",
+     "name": "Verdugo da Morte (1 PM: +1 dado extra de dano contra sangrando ou morto-vivo)",
+     "img": "systems/tormenta20/icons/poderes/origem.webp",
+     "type": "base",
+     "system": {},
+     "origin": "Compendium.origens-t20.origens.Item.jHHORJlFiZpnGPMO",
+     "tint": "#ffffff",
+     "flags": {
+      "tormenta20": {
+       "onuse": true,
+       "durationScene": false,
+       "self": false,
+       "attack": true,
+       "skill": false,
+       "ability": false,
+       "power": false,
+       "equipment": false,
+       "spell": false,
+       "consumable": false,
+       "items": "",
+       "aumenta": false,
+       "custo": "1"
+      }
+     },
+     "duration": {
+      "startTime": null,
+      "combat": null,
+      "seconds": null,
+      "rounds": null,
+      "turns": null,
+      "startRound": null,
+      "startTurn": null
+     },
+     "disabled": true,
+     "changes": [
+      {
+       "key": "dano",
+       "mode": 2,
+       "value": "1d",
+       "priority": null
+      }
+     ],
+     "description": "",
+     "transfer": true,
+     "statuses": [],
+     "sort": 10,
+     "_stats": {
+      "coreVersion": "13.344",
+      "systemId": null,
+      "systemVersion": null,
+      "createdTime": null,
+      "modifiedTime": null,
+      "lastModifiedBy": null,
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "exportSource": null
+     }
+    }
+   ],
+   "folder": "HBtV1cktdhWEEMTL",
+   "sort": 400,
+   "flags": {},
+   "ownership": {
+    "default": 0
+   },
+   "system": {
+    "description": {
+     "value": "<p>Você se torna treinado em Religião e recebe proficiência com cimitarra e espada longa. Além disso, uma vez por rodada, quando acerta um alvo sangrando ou um morto-vivo com uma arma de corte, você pode gastar 1 PM para causar um dado de dano extra do mesmo tipo.</p>",
+     "chat": "",
+     "unidentified": ""
+    },
+    "source": "Dragão Brasil #233, p. 21",
+    "ativacao": {
+     "execucao": "free",
+     "custo": 1,
+     "qtd": "",
+     "condicao": "",
+     "special": ""
+    },
+    "duracao": {
+     "value": 0,
+     "units": "",
+     "special": ""
+    },
+    "target": {
+     "value": null,
+     "width": null,
+     "units": "",
+     "type": ""
+    },
+    "range": {
+     "value": null,
+     "units": ""
+    },
+    "consume": {
+     "type": "",
+     "target": "",
+     "amount": null,
+     "mpMultiplier": false
+    },
+    "efeito": "",
+    "alcance": "none",
+    "alvo": "",
+    "area": "",
+    "resistencia": {
+     "pericia": "",
+     "atributo": "",
+     "bonus": 0,
+     "txt": ""
+    },
+    "rolls": [],
+    "tipo": "origem",
+    "subtipo": "Verdugo da Morte",
+    "chatFlavor": "",
+    "origin": "",
+    "tags": [
+     "Ubani"
+    ],
+    "rolltags": [],
+    "automationtags": [],
+    "chatGif": ""
+   },
+   "_stats": {
+    "systemId": "tormenta20",
+    "systemVersion": "1.5.015",
+    "coreVersion": "13.344",
+    "createdTime": 1795736000000,
+    "modifiedTime": 1795736000000,
+    "lastModifiedBy": "t20builder000000",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+   }
+  },
+  {
+   "_id": "EvPCNBXRP3VvX0Em",
+   "name": "Verdugo da Morte",
+   "type": "poder",
+   "img": "systems/tormenta20/icons/poderes/origem.webp",
+   "effects": [],
+   "folder": "F87MF5chW55XVaXi",
+   "sort": 400000,
+   "flags": {
+    "origens-t20": {
+     "origin": {
+      "kind": "single",
+      "name": "Verdugo da Morte",
+      "power": {
+       "name": "Verdugo da Morte",
+       "uuid": "Compendium.origens-t20.origens.Item.jHHORJlFiZpnGPMO"
+      }
+     }
+    }
+   },
+   "ownership": {
+    "default": 0
+   },
+   "system": {
+    "description": {
+     "value": "<p><strong>Região:</strong> Ubani</p><p><strong>Itens.</strong> Água benta x2, cimitarra ou espada longa, símbolo sagrado (Allihanna, Kallyadranoch, Megalokk ou Wynna), T$ 50 (pagamento por ritos fúnebres realizados).</p><p><strong>Poder da origem:</strong> @UUID[Compendium.origens-t20.origens.Item.jHHORJlFiZpnGPMO]{Verdugo da Morte}</p><hr><p><em>Ao arrastar esta origem para uma ficha, o poder dela é adicionado automaticamente (com os efeitos já configurados). Este poder está neste mesmo compêndio.</em></p>",
+     "chat": "",
+     "unidentified": ""
+    },
+    "source": "Dragão Brasil #233, p. 21",
+    "ativacao": {
+     "execucao": "passive",
+     "custo": 0,
+     "qtd": "",
+     "condicao": "",
+     "special": ""
+    },
+    "duracao": {
+     "value": 0,
+     "units": "",
+     "special": ""
+    },
+    "target": {
+     "value": null,
+     "width": null,
+     "units": "",
+     "type": ""
+    },
+    "range": {
+     "value": null,
+     "units": ""
+    },
+    "consume": {
+     "type": "",
+     "target": "",
+     "amount": null,
+     "mpMultiplier": false
+    },
+    "efeito": "",
+    "alcance": "none",
+    "alvo": "",
+    "area": "",
+    "resistencia": {
+     "pericia": "",
+     "atributo": "",
+     "bonus": 0,
+     "txt": ""
+    },
+    "rolls": [],
+    "tipo": "origem",
+    "subtipo": "Verdugo da Morte",
+    "chatFlavor": "",
+    "origin": "",
+    "tags": [
+     "Ubani"
+    ],
+    "rolltags": [],
+    "automationtags": [],
+    "chatGif": ""
+   },
+   "_stats": {
+    "systemId": "tormenta20",
+    "systemVersion": "1.5.015",
+    "coreVersion": "13.344",
+    "createdTime": 1795736000000,
+    "modifiedTime": 1795736000000,
     "lastModifiedBy": "t20builder000000",
     "duplicateSource": null,
     "exportSource": null,
